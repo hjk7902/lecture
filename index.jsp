@@ -11,7 +11,7 @@ try {
   out.println("1");
   Class.forName("oracle.jdbc.OracleDriver");
   out.println("2");
-  con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.119.131:1521:xe", "hr", "hr");
+  con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.56.101:1521:xe", "hr", "hr");
   out.println("OK");
 }catch(Exception e) {
   out.println(e.getMessage());
